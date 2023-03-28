@@ -1,0 +1,89 @@
+#path for Restaurants:
+./Pages/Restaurants.html
+    #headers for path:
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Index
+./index.html
+    #headers for path:
+    X-Frame-Options: DENY
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+
+#path for Tourism
+./Pages/Tourism.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Anjar
+./Pages/Anjar.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Baalbek
+./Pages/Baalbek.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+    
+#path for BeitEddine
+./Pages/BeitEddine.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+    
+#path for Byblos
+./Pages/Byblos.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Tyre
+./Pages/Tyre.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Kadisha
+./Pages/Kadisha.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Buses
+./Pages/Transportation.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+
+#path for SignUp
+./Pages/SignUp.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+#path for Lebanon
+./Pages/Lebanon.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+
+#path for tourism
+./Pages/Personalized-Tourism.html
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
+    
+#path for BeitEddine
+./php/Anjar.php
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: DENY
+
