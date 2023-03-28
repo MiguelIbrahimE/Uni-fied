@@ -1,0 +1,159 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/*Body changing mechanism to change size of body and ots functions */
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+/* Heading styles */
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+/* Paragraph styles */
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+p span {
+  background:#fff;
+  padding:0 10px;
+}
+
+/* Input styles */
+input {
+  margin-bottom: 3%;
+}
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Input and button styles */
+input, button {
+  padding: 3%;
+  width: 100%;
+}
+
+/* Login container styles */
+.login-container {
+  background-color: white;
+  padding: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* horizontal align */
+  width: 40vw;
+  margin-left: 30vw;
+  /* vertical align */
+  height: auto;
+  margin-top: 10%;
+}
+
+
+/* Submit and create account button styles */
+#submit, #create-acct-btn {
+  background-color: #0583D2;
+  color: white;
+  border: none;
+  margin-top: 5%;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+/* Sign-up and create account styles */
+#sign-up {
+  border: none;
+}
+#create-acct {
+  display: none;
+}
+
+/* Return button styles */
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}
+ /*Start of CSS and navbar*/
+body {
+  background: #dce1df;
+  color: #4f585e;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+a{
+  color:rgb(221, 197, 197);
+  text-decoration: none;
+}
+html{
+  overflow-x: hidden;
+    overflow-x: hidden;
+  }
+
+  /* Reset styles */
+  *{
+  margin: 0;
+  padding: 0;
+      margin: 0;
+      padding: 0;
+  }
+
+  a{
+  text-decoration: none;
+    text-decoration: none;
+  }
+
+/* Navbar container styles */
+  .navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #000000;
+  font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #000000;
+    font-size: 20px;
+  }
+  /* Toggle button */
+
+  /* Navbar toggle button styles */
+  .navbar_toggle {
+  margin-left: 5%;
+  font-size: 30px;
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: none;
+    margin-left: 5%;
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: none;
+  }
