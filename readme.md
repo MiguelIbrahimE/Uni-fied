@@ -35,7 +35,7 @@
 
 [**Version VII:** 	This version encompasses the beginning of a search bar in the	6](#_Toc131237078)
 
-[**IV.**	HTML Explanations:**	7](#_Toc131237079)
+[**IV.**	**HTML Explanations:**	7](#_Toc131237079)
 #
 
 
@@ -54,7 +54,7 @@ Gathering information is one of the most parts of creating a service-based web a
 
 Fortunately, after using web scraping with python and adding it directly to the database is a much better way to update the categories in the web application. I have found that the961.com is a great website that has the necessary information about the different restaurants, and touristic sites; however, even the961 has a weird assortment of information as well as a bad User Experience with multiple adds.
 1. ## **Versions**
-### **Version I:** 
+`		`**Version I:** 
 Version One is the start of the Website, Unified started as a website that only hosted touristic sites in a list statically and manually. That means that it can only be accessed on one devise with no User Interface and no User Experience.
 ### `		`**Version II:**
 Version Two is a larger version of Version One, it includes a well organized layout of files in Virtual Code, and the start of an organized and a consistent style to the HTML files: Tourism.html (Which are the touristic sites in Lebanon) , Restaurant.html (The best restaurants in Lebanon), and index.html (The Main Page).
@@ -68,9 +68,8 @@ Version IV includes the increase in the number of programming languages such as 
 Total responsiveness is the main concern of this version, after implementing necessary functions and parameters required for CSS3, HTML5, JQuery and Bootstrap to be as responsive and readable as possible for all screens possible. Creation of a logo and inserting documentation is necessary at this point because each CSS file is of around 300 – 700 lines of code and 5 CSS files. Code version: March 12, 2023
 ### `		`**Version VI:**
 Dynamic Database, Backend, and front end. After great consideration and great thought, a manually edited web page is not a great idea; however, a problem that caused me to rethink to make it dynamic is the static display of information of the961.com web app as well as the static touristic sites in Lebanon; however restaurants in Lebanon are seeing the light of day and many are opening every day. Another concern is if the data are really updating that frequently? If the data are updating that frequently, then the website is going to keep on reloading until there are no more new restaurants opening and achieving great quality. Code version: COMPOSER March 24, 2023.
-**Version VII:**
+### `		`**Version VII:**
 
-----------------
 This version encompasses the beginning of a search bar in the   
 
 unified top nav as well as putting the user in mind when it comes to the main page, the main page requires a quick access to all the sites the page offers.
@@ -80,14 +79,14 @@ unified top nav as well as putting the user in mind when it comes to the main pa
 
 
 **Index.html:**
-`	`Index.html is the main page for Unified, it is the most attractive part of the Web App and it allows the user to take an idea of the country before visiting it, on this page there is a small assortment of information hinting to the idea of minimalism with a drop nav no matter the size of the screen, of which the drop nav’s background is a fluid animation that increases when pressed on.
+Index.html is the main page for Unified, it is the most attractive part of the Web App and it allows the user to take an idea of the country before visiting it, on this page there is a small assortment of information hinting to the idea of minimalism with a drop nav no matter the size of the screen, of which the drop nav’s background is a fluid animation that increases when pressed on.
 
 When the hamburger icon is pressed on, drop nav elements and sites are displayed as follows:
 
 The following drop nav displays the sites that the current Web App provides such as Touristic-Attractions, Restaurants, Transportation, Map of Lebanon, and a Sign In/ Sign Up Page which reroutes to that page running a backend call for resource gathering and display done using PHP.
 
 <br>
-#### **Tourism.html:**
+ Tourism.html:
 
 
 Tourism.html is another html file that includes support for bootstrap, jQuery, and access to firebase  that shows the following: A Top nav to browse through the collections the Web App Provides and switches dynamically and responsively when the browser is smaller like so:
@@ -110,12 +109,12 @@ This HTML document has a real time review to the reviews on google maps and offe
 
 
 <br>
-**Anjar.html, Baalbek.html, etc.**
+Anjar.html, Baalbek.html, etc.
 
 Navigating to the dedicated page of Anjar, Baalbek etc, this page provides a short overview of the site clicked on and it shows the google maps location, a short description provided by different websites (done using web scraping) as well as pictures of the location further encouraging the person to go visit that touristic site.
 
 <br>
 
-**Transportation.html:**
+Transportation.html:
 
 
