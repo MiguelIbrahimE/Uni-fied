@@ -87,7 +87,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 d3.json('bus-routes.json').then(function(data) {
   // Add each route to the map as a polyline
   data.forEach(function(route) {
-    L.polyline(route.path, { color: route.color, weight: 5 }).addTo(map);
+    L.polyline(route.path, { color: route.color, weight: 2 }).addTo(map);
   });
 
   // Create dropdown menu of bus routes

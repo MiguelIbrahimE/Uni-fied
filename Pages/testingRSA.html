@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function getCookie(name) {
+  // Split document.cookie into an array of individual cookies
+  var cookies = document.cookie.split(';');
+  
+  // Loop through the cookies to find the desired one
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim();
+    
+    // Check if the cookie name matches the desired name
+    if (cookie.indexOf(name + '=') == 0) {
+      // Return the cookie value
+      return cookie.substring(name.length + 1, cookie.length);
+    }
+  }
+  
+  // If the cookie is not found, return null
+  return null;
+}
+
+// Example usage:
+var myCookieValue = getCookie('uid');
+console.log('The value of myCookie is: ' + myCookieValue);
+ </script>
+</html>

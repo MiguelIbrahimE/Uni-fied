@@ -1,4 +1,5 @@
 //Node.Js File
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import {
   getAuth,
@@ -63,7 +64,7 @@ let email,
         const user = userCredential.user;
         window.alert("Success! Welcome back!");
         document.cookie = `uid=${user.uid}`;
-        window.location = '../php/Tourism.php';
+        window.location = '../Pages/testingRSA.html';
       })
       .catch((error) => {
         console.log("Error occurred. Try again.");
