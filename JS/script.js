@@ -64,7 +64,7 @@ let email,
         const user = userCredential.user;
         window.alert("Success! Welcome back!");
         document.cookie = `uid=${user.uid}`;
-        window.location = '../Pages/testingRSA.html';
+        window.location = '../php/Anjar.php';
       })
       .catch((error) => {
         console.log("Error occurred. Try again.");

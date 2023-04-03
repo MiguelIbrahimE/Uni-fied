@@ -1,4 +1,37 @@
+<?php
+session_start();
 
+if (!isset($_SESSION["uid"])) {
+    header("Location: ../index.html");
+    exit();
+}
+
+if (isset($_COOKIE["username"]) && isset($_COOKIE["password"])) {
+    $un = $_COOKIE["username"];
+    $pass = $_COOKIE["password"];
+
+    $a_users = array("john.doe", "jane.doe", "johnny.doe");
+    $a_pass = array(md5("password1"), md5("password2"), md5("password3"));
+
+    $loggedIn = false;
+    for ($i = 0; $i < sizeof($a_users); $i++) {
+        if (($un == $a_users[$i]) && ($pass == $a_pass[$i])) {
+            $loggedIn = true;
+            break;
+        }
+    }
+
+    if ($loggedIn) {
+        // Start the session
+        session_start();
+        $_SESSION["username"] = $un;
+
+        // Redirect the user to the dashboard
+        header("Location: dashboard.php");
+        exit();
+    }
+}
+?>
 
 <!-- This is the DOCTYPE declaration for HTML5 document. -->
 <!DOCTYPE html>
@@ -52,9 +85,11 @@
   </header>
 
   <script src="../JS/app.js"></script>  
-  <script src="app.js"></script>  
-    
+  <script src="../JS/SearchBar.js"></script>  
+    <br>
 
+    <br><br>
+    <br><br>
     <!-- A section containing two divs -->
     <div>
         <!-- A div that holds an embedded Google maps location powered by iframe. -->

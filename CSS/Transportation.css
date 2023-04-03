@@ -122,6 +122,7 @@ button {
 .menu.is-active {
   top: 0;
   left: 0;
+  z-index: 690;
 }
 .menu-inner {
   display: flex;
