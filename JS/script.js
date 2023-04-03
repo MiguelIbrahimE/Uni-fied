@@ -25,7 +25,7 @@ const firebaseConfig = {
   messagingSenderId: "239394474302",
   appId: "1:239394474302:web:53b7b230ffead6eccf046f",
 };
-const emailRegex = /^(?=.*[@])(?=.*[.])[a-zA-Z0-9._-]+@(gmail|yahoo|outlook)\.(com|net|org)$/i;
+const emailRegex = /^(?=.*[@])(?=.*[.])[a-zA-Z0-9._-]+@(?:gmail|yahoo|outlook)\.(?:com|net|org)$/i;
 
 // Exam
 const app = initializeApp(firebaseConfig);
