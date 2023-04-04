@@ -6,31 +6,6 @@ if (!isset($_SESSION["uid"])) {
     exit();
 }
 
-if (isset($_COOKIE["username"]) && isset($_COOKIE["password"])) {
-    $un = $_COOKIE["username"];
-    $pass = $_COOKIE["password"];
-
-    $a_users = array("john.doe", "jane.doe", "johnny.doe");
-    $a_pass = array(md5("password1"), md5("password2"), md5("password3"));
-
-    $loggedIn = false;
-    for ($i = 0; $i < sizeof($a_users); $i++) {
-        if (($un == $a_users[$i]) && ($pass == $a_pass[$i])) {
-            $loggedIn = true;
-            break;
-        }
-    }
-
-    if ($loggedIn) {
-        // Start the session
-        session_start();
-        $_SESSION["username"] = $un;
-
-        // Redirect the user to the dashboard
-        header("Location: dashboard.php");
-        exit();
-    }
-}
 ?>
 
 <!-- This is the DOCTYPE declaration for HTML5 document. -->
@@ -45,7 +20,7 @@ if (isset($_COOKIE["username"]) && isset($_COOKIE["password"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The title of the webpage which displays on the tab. -->
-    <title>Anjar</title>
+    <title>Anjar - UULebanon</title>
     <!-- Favicon icon which represents the webpage in the user's browser tab. -->
     <link rel="icon" href="../Lebanese_Flag.ico">
     <!-- An external stylesheet is added which helps to style the HTML page. -->

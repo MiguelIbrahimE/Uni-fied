@@ -117,7 +117,7 @@ button {
   background-color: var(--color-white);
   box-shadow: var(--shadow-medium);
   transition: all 0.5s ease-in-out;
-  z-index: 30;
+  z-index: 3;
 }
 .menu.is-active {
   top: 0;
