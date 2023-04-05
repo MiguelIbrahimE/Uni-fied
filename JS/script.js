@@ -45,8 +45,7 @@ const confirmSignUpPasswordIn = document.getElementById(
 );
 const createacctbtn = document.getElementById("create-acct-btn");
 const returnBtn = document.getElementById("return-btn");
-const newsletter = document.getElementById("newsletter");
-console.log(newsletter.value)
+
 let email,
   password,
   signupEmail,
@@ -93,7 +92,7 @@ createacctbtn.addEventListener("click", function() {
     window.alert("Email fields do not match. Try again.");
     isVerified = false;
   }
-  if(signupEmail !=emailRegex){
+  if (!emailRegex.test(signupEmail)) {
     window.alert("Invalid email/password")
     isVerified=false;
   }

@@ -8,19 +8,25 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  
 }
 
 h1, h2 {
   font-family: sans-serif;
   font-weight: 400;
+  color:#B8B8B8;
 }
-
+.menu-items{
+    color:#B8B8B8;
+}
 a {
   text-decoration: none;
+  color:#B8B8B8;
 }
 
 li {
   list-style: none;
+  color:#B8B8B8;
 }
 
 .flex {
@@ -820,4 +826,8 @@ footer label {
   footer .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+html{
+    overflow-x: hidden;
+    background-color: #171717;
 }

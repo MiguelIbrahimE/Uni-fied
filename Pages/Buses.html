@@ -5,7 +5,7 @@
   <title>Bus Connections - UULebanon </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
  <link rel="stylesheet" href="../CSS/Busses.css" />
-  <link rel="icon" href="../Lebanese_Flag.ico">
+ <link rel="icon" href="../logo-no-background.png">
   <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
  <style>
     #map {
@@ -24,7 +24,7 @@
 <body>
   <header class="header" id="header">
     <nav class="navbar container">
-       <a href="../index.html" class="brand">UULebanon</a>
+       <a href="../index.html" class="brand"><img src="../logo-no-background.png"style="width:46px"></a>
        <div class="burger" id="burger">
           <span class="burger-line"></span>
           <span class="burger-line"></span>
@@ -35,10 +35,9 @@
           <ul class="menu-inner">
              <li class="menu-item"><a class="menu-link" href="../index.html">Home</a></li>
              <li class="menu-item"><a class="menu-link" href="./Restaurants.html">Restaurants</a></li>
-             <li class="menu-item"><a class="menu-link" href="./Tourism.html">Touristic Sites</a></li>
              <li class="menu-item"><a class="menu-link" href="./Lebanon.html">Map of Lebanon</a></li>
              <li class="menu-item"><a class="menu-link" href="./Transportation.html">Transportation</a></li>
-             <li class="menu-item"><a class="menu-link" href="#">Sign Up/ Log In</a></li>
+             <li class="menu-item"><a class="menu-link" href="./SignUp.html">Sign Up/ Log In</a></li>
           </ul>
        </div>
        <span><i class="bx bx-search search-toggle"></i></span>
@@ -47,7 +46,9 @@
              <span><i class="bx bx-arrow-back search-cancel"></i></span>
              <input type="search" name="search" class="search-input" placeholder="Search here...">
           </form>
+          <div id="search-results"></div>
        </div>
+       
     </nav>
  </header>
 

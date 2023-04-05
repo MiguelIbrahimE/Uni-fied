@@ -443,11 +443,16 @@ h1{
   transition: opacity 0.5s;
 }
 
-@media only screen and (max-width: 600px) {
+
   .img-container:hover .img-text {
     opacity: 1;
   }
   .img-container:hover img {
     opacity: 1;
   }
-}
+  .content_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
