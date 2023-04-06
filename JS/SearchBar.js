@@ -67,9 +67,11 @@ searchInput.addEventListener('input', function() {
   for (let i = 0; i < results.length; i++) {
     const url = sanitizeUrl(results[i].url);
     const name = sanitizeText(results[i].name);
-    html += `<a href="${url}">${name}</a>`;
+    html += `<a href="${url}">${name}<br></a>`;
   }
-
+  if(query==""){
+   html="";
+  }
   // display search results to user
   searchResults.innerHTML = html;
 });

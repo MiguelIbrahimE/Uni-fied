@@ -4,6 +4,8 @@ from firebase_admin import firestore
 import requests
 from bs4 import BeautifulSoup
 
+
+query="Touristic Sites in Lebanon"
 # Initialize Firebase
 try:
     cred = credentials.Certificate("./serviceAccount.json")
@@ -14,7 +16,6 @@ except Exception as e:
     exit(1)
 
 # Define the URL to scrape
-URL = "https://www.the961.com/touristic-sites-lebanon-this-summer/"
 
 # Send a GET request to the URL and get the page content
 try:
