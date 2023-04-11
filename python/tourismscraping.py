@@ -4,7 +4,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-query = 'Touristic Sites in Lebanosn'
+query = 'Touristic Sites in Lebanon'
 num_results = 10  # number of search results to retrieve
 
 # Send a GET request to Google's search engine

@@ -31,33 +31,10 @@ if (!isset($_SESSION["uid"])) {
 
 <body>
     <!-- Header or navigation bar for the website. -->
-    <header class="header" id="header">
-    <nav class="navbar container">
-       <a href="../index.html" class="brand">UNIFIED</a>
-       <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-       </div>
-       <span class="overlay"></span>
-       <div class="menu" id="menu">
-          <ul class="menu-inner">
-             <li class="menu-item"><a class="menu-link" href="../index.html">Home</a></li>
-             <li class="menu-item"><a class="menu-link" href="./Restaurants.html">Restaurants</a></li>
-             <li class="menu-item"><a class="menu-link" href="./Lebanon.html">Map of Lebanon</a></li>
-             <li class="menu-item"><a class="menu-link" href="./Transportation.html">Transportation</a></li>
-
-          </ul>
-       </div>
-       <span><i class="bx bx-search search-toggle"></i></span>
-       <div class="search-block">
-          <form class="search-form">
-             <span><i class="bx bx-arrow-back search-cancel"></i></span>
-             <input type="search" name="search" class="search-input" placeholder="Search here...">
-          </form>
-       </div>
-    </nav>
-  </header>
+    <?php 
+    require_once "../navbar/navbar.php";
+    loadNavBar();
+    ?>
 
   <script src="../JS/app.js"></script>  
   <script src="../JS/SearchBar.js"></script>  

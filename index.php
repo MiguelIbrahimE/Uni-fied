@@ -24,7 +24,7 @@
             <li><a href="./Pages/Restaurants.php">Restaurants</a></li>
             <li><a href="./Pages/Transportation.php">Transportation</a></li>
             <li><a href="./Pages/Lebanon.php">Map of Lebanon</a></li>
-            <li><a href="./Pages/SignUp.php">Sign In</a></li>
+            <li><a href="./Pages/index.php">Sign In</a></li>
         </ul>
     </nav>
 

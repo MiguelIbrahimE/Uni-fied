@@ -16,7 +16,6 @@
     loadNavBar();
     ?>
 
-
   
   
     <script src="../JS/app.js"></script>  
