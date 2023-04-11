@@ -41,12 +41,12 @@
   <div style="padding: 10%;">
     <div>
       <div class="content_img" style="float: left; width: 45%; padding-bottom: 10px;">
-        <img src="./Heritage/Anjar2.jpg" style="width: 100%;">
+        <img src="./Heritage/Anjar2.jpg" style="width: 100%;" onclick="Tourism();">
         <div style="text-align: center;">Tourism</div>
       </div>
       <div>
         <div class="content_img" style="float: right; width: 47%; padding-bottom: 10px;">
-          <img src="./Restaurants/Osaka.jpg" style="width: 100%;" onclick="Restau()">
+          <img src="./Restaurants/Osaka_Sushi_Lounge.jpg" style="width: 100%;" onclick="Restau()">
           <div style="text-align: center;">Restaurants</div>
         </div>
       </div>
@@ -64,7 +64,10 @@
 </body>
 <script>
   function Restau(){
-    document.location.href="./Pages/Restaurants.html"
+    document.location.href="./Pages/Restaurants.php"
+  }
+  function Tourism(){
+    document.location.href="./Pages/Restaurants.php"
   }
 </script>
 </html>

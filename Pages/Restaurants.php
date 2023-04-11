@@ -30,7 +30,7 @@
              <li class="menu-item"><a class="menu-link" href="../Tourism.php">Tourism</a></li>
              <li class="menu-item"><a class="menu-link" href="./Lebanon.php">Map of Lebanon</a></li>
              <li class="menu-item"><a class="menu-link" href="./Transportation.php">Transportation</a></li>
-             <li class="menu-item"><a class="menu-link" href="./SignUp.php">Sign Up/ Log In</a></li>
+             <li class="menu-item"><a class="menu-link" href="./SignLog.php">Sign Up/ Log In</a></li>
           </ul>
        </div>
        <span><i class="bx bx-search search-toggle"></i></span>
@@ -55,7 +55,6 @@
         <!--Defining set elements-->
           <input type="radio" id="All" name="categories" value="All" checked>
           <input type="radio" id="Lebanese" name="categories" value="Lebanese">
-          <input type="radio" id="French" name="categories" value="French">
           <input type="radio" id="Italian" name="categories" value="Italian">
           <input type="radio" id="Japanese" name="categories" value="Japanese">
           <input type="radio" id="Indian" name="categories" value="Indian">
@@ -68,9 +67,7 @@
             <li>
               <label for="Lebanese">Lebanese</label>
             </li>
-            <li>
-              <label for="French">French</label>
-            </li>
+           
             <li>
               <label for="Italian">Italian</label>
             </li>
@@ -90,7 +87,7 @@
               <article>
                 <figure>
                   <a hre  f="" target="_blank">
-                    <img src="../Restaurants/Al_Hindi.jpeg" alt="">
+                    <img src="../Restaurants/Al_Hindi.jpg" alt="">
 
                   </a>
                   <figcaption>
@@ -123,7 +120,7 @@
                <article>
                  <figure>
                    <a hre  f="" target="_blank">
-                     <img src="../Restaurants/Mandaloun-Batroun.PNG" alt="">
+                     <img src="../Restaurants/Al_Mandaloun.PNG" alt="">
                    </a>
                    <figcaption>
                      <ol class="post-categories">
@@ -150,7 +147,7 @@
               <article>
                 <figure>
                   <a hre  f="" target="_blank">
-                    <img src="../Restaurants/AT.jpg" alt="">
+                    <img src="../Restaurants/Appetito_Trattoria.jpg" alt="">
 
                   </a>
                   <figcaption>
@@ -205,7 +202,7 @@
               <article>
                 <figure>
                   <a hre  f="https://www.instagram.com/escobar.lb/?hl=en" target="_blank">
-                    <img src="../Restaurants/esco-bar.jpg" alt="">
+                    <img src="../Restaurants/Escobar.jpg" alt="">
 
                   </a>
                   <figcaption>
@@ -215,7 +212,7 @@
                       </li>
                      
                     </ol>
-                    <h2 class="post-title">Escobar Coctel Y Cocina
+                    <h2 class="post-title">Escobar
                       </a>
                     </h2>
                     <span class="fa fa-star checked"></span>
@@ -233,7 +230,7 @@
                <article>
                  <figure>
                    <a hre  f="" target="_blank">
-                     <img src="../Restaurants/Village.jpg" alt="">
+                     <img src="../Restaurants/The_Village.jpg" alt="">
                    </a>
                    <figcaption>
                      <ol class="post-categories">
@@ -289,7 +286,7 @@
               <article>
                 <figure>
                   <a hre  f="" target="_blank">
-                    <img src="../Restaurants/Leilas.jpg" alt="">
+                    <img src="../Restaurants/Leila.jpg" alt="">
                   </a>
                   <figcaption>
                     <ol class="post-categories">
@@ -317,7 +314,7 @@
                <article>
                  <figure>
                    <a hre  f="https://www.instagram.com/thevillagedbayeh/?hl=en" target="_blank">
-                     <img src="../Restaurants/Osaka.jpg" alt="">
+                     <img src="../Restaurants/Osaka_Sushi_Lounge.jpg" alt="">
                    </a>
                    <figcaption>
                      <ol class="post-categories">
