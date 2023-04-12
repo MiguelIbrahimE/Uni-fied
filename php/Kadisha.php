@@ -25,6 +25,7 @@ if (!isset($_SESSION["uid"])) {
     require_once "../navbar/navbar.php";
     loadNavBar();
     ?>
+    
   <script src="../JS/app.js"></script>  
   <script src="../JS/SearchBar.js"></script>  
 
