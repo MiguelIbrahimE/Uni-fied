@@ -41,13 +41,18 @@ if (searchToggle && searchCancel) {
 const searchInput = document.querySelector('.search-input');
 const searchResults = document.querySelector('#search-results');
 const files = [
-  {name:"Anjar", url:"../Pages/Anjar.html"},
-  {name:"Baalbek", url:"../Pages/Baalbek.html"},
-  {name:"BeitEddine", url:"../Pages/BeitEddine.html"},
-  {name:"Byblos", url:"../Pages/Byblos.html"},
-  {name:"Kadisha", url:"../Pages/Kadisha.html"},
-  {name:"Map", url:"../Pages/Lebanon.html"},
-  {name:"Tyre", url:"../Pages/Tyre.html"},
+  {name:"Anjar", url:"../Pages/Anjar.php"},
+  {name:"Baalbek", url:"../Pages/Baalbek.php"},
+  {name:"BeitEddine", url:"../Pages/BeitEddine.php"},
+  {name:"Byblos", url:"../Pages/Byblos.php"},
+  {name:"Kadisha", url:"../Pages/Kadisha.php"},
+  {name:"Map", url:"../Pages/Lebanon.php"},
+  {name:"Tyre", url:"../Pages/Tyre.php"},
+  {name:"Busses", url:"../Pages/Buses.php"},
+  {name:"Restaurant", url:"../Pages/Restaurants.php"},
+  {name:"Transportation", url:"../Pages/Transportation.php"},
+  {name:"Map", url:"../Pages/Lebanon.php"},
+  {name:"Lebanon", url:"../Pages/Lebanon.php"},
 ];
 
 searchInput.addEventListener('input', function() {

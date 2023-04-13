@@ -46,7 +46,7 @@
       </div>
       <div>
         <div class="content_img" style="float: right; width: 47%; padding-bottom: 10px;">
-          <img src="./Restaurants/Osaka_Sushi_Lounge.jpg" style="width: 100%;" onclick="Restau()">
+          <img src="./Restaurants/Osaka Sushi Lounge.jpg" style="width: 100%;" onclick="Restau()">
           <div style="text-align: center;">Restaurants</div>
         </div>
       </div>

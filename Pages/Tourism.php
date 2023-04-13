@@ -63,7 +63,7 @@ $pdo = null;
   <script src="../JS/SearchBar.js"></script>  
 <script>
   function run(){
-    const id=document.getElementById();
+    alert("You need to be logged in to mark a place as visited");
     
   }
 </script>
