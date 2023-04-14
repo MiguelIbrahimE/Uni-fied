@@ -1,13 +1,8 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--Head-->
    <link rel="icon" href="../logo-no-background.png">
   <link rel="stylesheet" type="text/css" href="../CSS/Tourism.css">
-  <!--Burger Icon-->
- 
 </head>
 <body>
   <!-- Start of HTML and NavBar-->
@@ -16,8 +11,6 @@
     loadNavBar();
     ?>
   <br><br><br><br>
-
- 
  <?php
 require "../config/cfg.php";
 
@@ -27,11 +20,14 @@ try {
   
   $stmt = $pdo->query("SELECT NAME FROM touristic_sites");
   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+?>
+<div class="cards">
+  <?php
   if ($result) {
     foreach($result as $row) {
       $name = $row["NAME"];
-      ?><div class="card">
+      ?>
+      <div class="card">
               <div class="card__image-holder">
                 <?php echo'<img class="card__image" src="../Heritage/'.$name.'.jpg" />';?>
               </div>
@@ -56,8 +52,15 @@ try {
 
 $pdo = null;
 ?>
+</div>
 </body>
 <script src="../JS/app.js"></script>  
   <script src="../JS/SearchBar.js"></script>  
-
+<script>
+  function run(){
+    const id=document.getElementById();
+    alert("You need to be logged in to mark a place as visited");
+    
+  }
+</script>
 </html>

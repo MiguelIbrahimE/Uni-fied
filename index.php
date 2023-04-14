@@ -15,7 +15,6 @@
     <a href="index.html" class="logo" target="_blank">
         <img src="./logo-color.png" alt=""  style="width:50px;height:50px">
     </a>
-
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
     <label for="menu-icon"></label>
     <nav class="nav"> 		
@@ -24,10 +23,9 @@
             <li><a href="./Pages/Restaurants.php">Restaurants</a></li>
             <li><a href="./Pages/Transportation.php">Transportation</a></li>
             <li><a href="./Pages/Lebanon.php">Map of Lebanon</a></li>
-            <li><a href="./Pages/index.php">Sign In</a></li>
+            <li><a href="./users//register_form.php">Sign In</a></li>
         </ul>
     </nav>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
    
@@ -59,7 +57,6 @@
    <br>
    <br>
    <br>
-
    <br>
 </body>
 <script>

@@ -1,30 +1,26 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurants - UULebanon </title>
-    <link rel="icon" href="../logo-no-background.png">
-    <link rel="stylesheet" href="../CSS/restaurants.css">
-    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
-    
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+  <!--Head-->
+   <link rel="icon" href="../logo-no-background.png">
+  <link rel="stylesheet" type="text/css" href="../CSS/restaurants.css">
+  <!--Burger Icon-->
+ 
+</head>
 <body>
-    <!-- Header or navigation bar for the website. -->
-   <!-- Start of HTML and NavBar-->
-   <?php 
+  <!-- Start of HTML and NavBar-->
+  <?php 
     require_once "../navbar/navbar.php";
     loadNavBar();
     ?>
+  <br><br><br><br>
 
-
-  <script src="../JS/SearchBar.js"></script>
-<br>
-<br><br>
-    <section class="author-archive">
+ <?php
+require "../config/cfg.php";
+?>
+<section class="author-archive">
       <!-- HTML -->
         <div class="container">
         <!--Defining set elements-->
@@ -56,307 +52,73 @@
               <label for="Others">Others</label>
             </li>
           </ol>
-      <!-- DIV CARDS!!-->
-          <ol class="posts">
-            <li class="post" data-category="Indian">
-              <article>
-                <figure>
-                  <a hre  f="" target="_blank">
-                    <img src="../Restaurants/Al_Hindi.jpg" alt="">
+<?php
+try {
+  $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  
+  $stmt = $pdo->query("SELECT NAME,Rating,NUMBER_OF_RATINGS,Type FROM restaurants");
+  $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+<ol class="posts">
+  <?php
+  if ($result) {
+    
+    foreach($result as $row) {
+      $name = $row["NAME"];
+      $ratings= $row["Rating"];
+      $nmb_rating=$row["NUMBER_OF_RATINGS"];
+      $type=$row["Type"];
 
-                  </a>
-                  <figcaption>
-                    <ol class="post-categories">
-                      <li>
-                        <a href="">Indian</a>
-                      </li>
-                     
-                    </ol>
-                    <a href="https://www.beirut.com/l/490"target="_blank"><h2 class="post-title">Al Hindi
-                    
-                      
-
-                    </h2>
-                    </a>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    
-                    
-                  </figcaption>
-                </figure>
-              </article>
-           
-            </li>
-            <li class="post" data-category="Lebanese">
+      ?>
+   
+     <li class="post" data-category=<?php echo''.$type?>>
               <!--1024x740!-->
                <article>
                  <figure>
-                   <a hre  f="" target="_blank">
-                     <img src="../Restaurants/Al_Mandaloun.PNG" alt="">
+                   <?php echo'<a hre  f="'.$name.'.php" target="_blank">'?>
+                    <?php echo' <img src="../Restaurants/'.$name.'.jpg" alt="">'?>
                    </a>
                    <figcaption>
                      <ol class="post-categories">
                        <li>
-                         <a href="">Lebanese</a>
+                         <a href=""><?php echo ''.$type?></a>
                        </li>
                       
                      </ol>
                      <h2 class="post-title">
-                       <a href="https://tasteandflavors.com/bahsa-by-al-mandaloun-group/" target="_blank">Al-Mandaloun
+                       <a href="https://www.instagram.com/nasmabeyrouth/?hl=en" target="_blank"><?php echo''.$name ?>
                        </a>
                      </h2>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star"></span>
-                    
-                   </figcaption>
-                 </figure>
-               </article>
-            </li>
-            <li class="post" data-category="Italian">
-              <article>
-                <figure>
-                  <a hre  f="" target="_blank">
-                    <img src="../Restaurants/Appetito_Trattoria.jpg" alt="">
-
-                  </a>
-                  <figcaption>
-                    <ol class="post-categories">
-                      <li>
-                        <a href="https://appetitotrattoria.com/">Italian</a>
-                      </li>
+                     <?php
+                     $floor_num = floor($ratings);
                      
-                    </ol>
-                    <h2 class="post-title">Appetito Trattoria
-                      </a>
-                    </h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
+                   echo  '<p> Rating: '.$ratings.' Rated by: '.$nmb_rating.' users</p>';?>
                     
-                  </figcaption>
-                </figure>
-              </article>
-            </li>
-            <li class="post" data-category="Lebanese">
-              <article>
-                <figure>
-                  <a hre  f="" target="_blank">
-                    <img src="../Restaurants/Babel.jpg" alt="">
-
-                  </a>
-                  <figcaption>
-                    <ol class="post-categories">
-                      <li>
-                        <a href="">Lebanese</a>
-                      </li>
-                     
-                    </ol>
-                    <a href="https://www.babelrestaurant.com/" target="_blank"><h2 class="post-title">Babel
-                      </a>
-                    </h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    
-                  </figcaption>
-                </figure>
-              </article>
-            </li>
-            <li class="post" data-category="Others">
-              <!--1024x740!-->
-              <article>
-                <figure>
-                  <a hre  f="https://www.instagram.com/escobar.lb/?hl=en" target="_blank">
-                    <img src="../Restaurants/Escobar.jpg" alt="">
-
-                  </a>
-                  <figcaption>
-                    <ol class="post-categories">
-                      <li>
-                        <a href="https://www.instagram.com/escobar.lb/?hl=en">Others</a>
-                      </li>
-                     
-                    </ol>
-                    <h2 class="post-title">Escobar
-                      </a>
-                    </h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    
-                  </figcaption>
-                </figure>
-              </article>
-            </li>
-            <li class="post" data-category="Others">
-              <!--1024x740!-->
-               <article>
-                 <figure>
-                   <a hre  f="" target="_blank">
-                     <img src="../Restaurants/The_Village.jpg" alt="">
-                   </a>
-                   <figcaption>
-                     <ol class="post-categories">
-                       <li>
-                         <a href="">Others</a>
-                       </li>
-                      
-                     </ol>
-                     <h2 class="post-title">
-                       <a href="https://www.instagram.com/thevillagedbayeh/?hl=en" target="_blank">The village
-                       </a>
-                     </h2>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star"></span>
                     
                    </figcaption>
                  </figure>
                </article>
              </li>
-             <li class="post" data-category="Others">
-              <!--1024x740!-->
-               <article>
-                 <figure>
-                   <a hre  f="" target="_blank">
-                     <img src="../Restaurants/Little_china.jpg" alt="">
-                   </a>
-                   <figcaption>
-                     <ol class="post-categories">
-                       <li>
-                         <a href="">Others</a>
-                       </li>
-                      
-                     </ol>
-                     <h2 class="post-title">
-                       <a href="https://www.instagram.com/littlechinaofficial/?hl=en" target="_blank">Little China
-                       </a>
-                     </h2>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    
-                   </figcaption>
-                 </figure>
-               </article>
-             </li>
-           
-            <li class="post" data-category="Lebanese">
-              <article>
-                <figure>
-                  <a hre  f="" target="_blank">
-                    <img src="../Restaurants/Leila.jpg" alt="">
-                  </a>
-                  <figcaption>
-                    <ol class="post-categories">
-                      <li>
-                        <a href="">Lebanese</a>
-                      </li>
-                    </ol>
-                    <h2 class="post-title">
-                      <a href="https://www.instagram.com/leilaminlebnen/?hl=en" target="_blank">Leila
-                      </a>
-                    </h2>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star-half checked"></span>
-                    
-                  </figcaption>
-                </figure>
-              </article>
-            </li>
-            
-            <li class="post" data-category="Japanese">
-              <!--1024x740!-->
-               <article>
-                 <figure>
-                   <a hre  f="https://www.instagram.com/thevillagedbayeh/?hl=en" target="_blank">
-                     <img src="../Restaurants/Osaka_Sushi_Lounge.jpg" alt="">
-                   </a>
-                   <figcaption>
-                     <ol class="post-categories">
-                       <li>
-                         <a href="">Japanese</a>
-                       </li>
-                      
-                     </ol>
-                     <h2 class="post-title">
-                       <a href="https://www.instagram.com/nasmabeyrouth/?hl=en" target="_blank">Osaka Sushi Lounge
-                       </a>
-                     </h2>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star-half checked"></span>
-                    
-                   </figcaption>
-                 </figure>
-               </article>
-             </li>
-             
-            <li class="post" data-category="Others">
-              <!--1024x740!-->
-               <article>
-                 <figure>
-                   <a hre  f="https://www.roadsterdiner.com/" target="_blank">
-                     <img src="../Restaurants/Roadsters.jpg" alt="">
-                   </a>
-                   <figcaption>
-                     <ol class="post-categories">
-                       <li>
-                         <a href="">Others</a>
-                       </li>
-                      
-                     </ol>
-                     <h2 class="post-title">
-                       <a href="https://www.roadsterdiner.com/" target="_blank">Roadsters
-                       </a>
-                     </h2>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star-half checked"></span>
-                   </figcaption>
-                 </figure>
-               </article>
-            </li>
+   <?php }
+  } else {
+    echo "0 results";
+  }
+  
+} catch(PDOException $e) {
+  echo "Error: " . $e->getMessage();
+}
 
-          </ol>
-        </div>
-        <br>
-      <br>
-      <br>
-      
-                    
-        <script>
-          function wait(){
-            alert("You need to be logged in to review");
-          }
-        </script>
-          
-      </section>
-      
+$pdo = null;
+?>
+</ol>
 </body>
-
+<script src="../JS/app.js"></script>  
+  <script src="../JS/SearchBar.js"></script>  
+<script>
+  function run(){
+    const id=document.getElementById();
+    
+  }
+</script>
 </html>
-<!--END OF PAGE AND HTML-->
