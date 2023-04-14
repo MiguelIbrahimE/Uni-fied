@@ -4,6 +4,9 @@
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
+session_start();
+
+
 if(isset($_POST['submit'])){
    $current_time = date('Y-m-d H:i:s');
    $current_time2 = date('Y-m-d H:i:s');
@@ -13,27 +16,40 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   $select = " SELECT * FROM users WHERE email = '$email' && PASSWORD = '$pass' ";
+   $select = "SELECT * FROM users WHERE email = '$email' && PASSWORD = '$pass'";
+   $result = mysqli_query($conn, $select);
 
-$result = mysqli_query($conn, $select);
+   if(mysqli_num_rows($result) > 0){
+      $error[] = 'user already exists!';
+   } else {
+      if($pass != $cpass){
+         $error[] = 'password not matched!';
+      } else {
+         $insert = "INSERT INTO users(name, email, PASSWORD, user_type, CREATION_DATE, MODIFICATION_DATE) 
+         VALUES('$name', '$email', '$pass', '$user_type', '$current_time', '$current_time2')";
+         mysqli_query($conn, $insert);
 
-if(mysqli_num_rows($result) > 0){
+         // get user ID
+         $user_select = "SELECT ID FROM users WHERE email = '$email' && PASSWORD = '$pass'";
+         $user_result = mysqli_query($conn, $user_select);
+         $user_row = mysqli_fetch_assoc($user_result);
+         $user_id = $user_row['ID'];
 
-    $error[] = 'user already exist!';
+         // initialize visited sites
+         $sites_select = "SELECT NAME FROM touristic_sites";
+         $sites_result = mysqli_query($conn, $sites_select);
+         while($site_row = mysqli_fetch_assoc($sites_result)){
+            $site_name = $site_row['NAME'];
+            $site_insert = "INSERT INTO visited_sites(USER_ID, site_name, VISITED) 
+            VALUES('$user_id', '$site_name', 0)";
+            mysqli_query($conn, $site_insert);
+         }
 
-} else {
-
-    if($pass != $cpass){
-        $error[] = 'password not matched!';
-    } else {
-        $insert = "INSERT INTO users(name, email, PASSWORD, user_type,CREATION_DATE,MODIFICATION_DATE) VALUES('$name','$email','$pass','$user_type','$current_time','$current_time2')";
-        mysqli_query($conn, $insert);
-        header('location:login_form.php');
-    }
-}
+         header('location:login_form.php');
+      }
+   }
 
 };
-
 
 ?>
 

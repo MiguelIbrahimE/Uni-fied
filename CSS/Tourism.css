@@ -52,13 +52,11 @@ main {
 
 a,
 button {
-  cursor: pointer;
+  background-color: var(--color-blue-200);
+  color: var(--color-white);
   border: none;
-  outline: none;
-  background: none;
-  text-transform: unset;
-  text-decoration: none;
-  color:rgb(221, 197, 197);
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 .section {

@@ -1,8 +1,10 @@
 <?php
 
 @include './config.php';
-
+ini_set('session.gc_maxlifetime', 3600); // Set session lifetime to 1 hour
+ini_set('session.cookie_lifetime', 3600); // Set cookie lifetime to 1 hour
 session_start();
+
 
 if(isset($_POST['submit'])){
 
@@ -21,13 +23,30 @@ if(isset($_POST['submit'])){
       $row = mysqli_fetch_array($result);
 
       if($row['user_type'] == 'admin'){
-
+         $key = "my-secret-key";
+         $method = "AES-256-CBC";
+         $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
+         
+         // Encrypt the data using AES encryption and the generated iv
+         $ciphertext = openssl_encrypt($plaintext, $method, $key, 0, $iv);
+         
+         // Generate a hash of the encrypted data
+         $hash = hash('sha256', $ciphertext);
          $_SESSION['admin_name'] = $row['name'];
          header('location:admin_page.php');
 
       }elseif($row['user_type'] == 'user'){
-
-         $_SESSION['user_name'] = $row['name'];
+         $plaintext=$email;
+         $key = "Oblivion";
+         $method = "AES-256-CBC";
+         $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
+         
+         // Encrypt the data using AES encryption and the generated iv
+         $ciphertext = openssl_encrypt($plaintext, $method, $key, 0, $iv);
+         
+         // Generate a hash of the encrypted data
+         $hash = hash('sha256', $ciphertext);
+         $_SESSION['user_name'] = $hash;
          header('location:../php/Tourism.php');
 
       }
