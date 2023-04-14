@@ -18,9 +18,7 @@ for result in cursor:
     array.append(result)
     print(result)
 
-# close cursor and connection
-cursor.close()
-cnx.close()
+
 
 
 query = 'Best restaurants in Lebanon'
@@ -63,9 +61,12 @@ for url in urls:
         queries.append(last_updated_time)
     else:
         print(f'URL: {url}, Last Updated Time not found')
+for db_result, web_result in zip(array, queries):
+    # compare the last updated time values
+    if db_result[0] != web_result:
+        # print the differences
+        print(f"Name: {db_result[1]}, Last Updated (DB): {db_result[0]}, Last Updated (Web): {web_result}")
 
-
-for i in range(queries):
-    print(queries[i])#Debbugging Trials
-
+cursor.close()
+cnx.close()
 
