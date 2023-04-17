@@ -2,14 +2,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Initialize Firebase
-try:
-    cred = credentials.Certificate("./serviceAccount.json")
-    firebase_admin.initialize_app(cred)
-    db = firestore.client()
-except Exception as e:
-    print("Failed to initialize Firebase:", e)
-    exit(1)
 
 # Define the URL to scrape
 URL = "https://www.the961.com/12-restaurants-for-foodie-hunt-adventure/"
