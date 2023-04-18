@@ -114,7 +114,7 @@ $pdo = null;
 </ol>
 </body>
 <script src="../JS/app.js"></script>  
-  <script src="../JS/SearchBar.js"></script>  
+  <script src="../JS/SearchBar.min.js"></script>  
 <script>
   function run(){
     const id=document.getElementById();

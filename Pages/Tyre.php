@@ -11,6 +11,7 @@
 
 </head>
 <body>
+<script src="../JS/SearchBar.min.js"></script> 
    <!-- Start of HTML and NavBar-->
    <?php 
     require_once "../navbar/navbar.php";
@@ -19,8 +20,6 @@
   
   
 
-  <script src="../JS/app.js"></script>  
-  <script src="../JS/SearchBar.js"></script>  
     
         <br>
         <br>

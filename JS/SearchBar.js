@@ -46,7 +46,6 @@ const files = [
   {name:"BeitEddine", url:"../Pages/BeitEddine.php"},
   {name:"Byblos", url:"../Pages/Byblos.php"},
   {name:"Kadisha", url:"../Pages/Kadisha.php"},
-  {name:"Map", url:"../Pages/Lebanon.php"},
   {name:"Tyre", url:"../Pages/Tyre.php"},
   {name:"Busses", url:"../Pages/Buses.php"},
   {name:"Restaurant", url:"../Pages/Restaurants.php"},
