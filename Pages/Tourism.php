@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <link rel="icon" href="../logo-no-background.png">
-  <link rel="stylesheet" type="text/css" href="../CSS/Tourism.css">
+  <link rel="stylesheet"  href="../CSS/Tourism.css">
 
 </head>
 <body>

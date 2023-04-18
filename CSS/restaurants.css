@@ -493,7 +493,10 @@ filter: grayscale(0%);
     height: 4rem;
     margin: 0 auto;
   }
-  
+  a{
+    color:rgb(221, 197, 197);
+    text-decoration: none;
+  }
   .menu {
     position: fixed;
     top: 0;
