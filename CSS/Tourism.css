@@ -50,14 +50,6 @@ main {
   overflow: hidden;
 }
 
-a,
-button {
-  background-color: var(--color-blue-200);
-  color: var(--color-white);
-  border: none;
-  padding: 1rem;
-  font-size: 1rem;
-}
 
 .section {
   margin: 0 auto;
@@ -315,10 +307,6 @@ z-index: 22;
 }
 
 
-a{
-  color:rgb(221, 197, 197);
-  text-decoration: none;
-}
 
 span{
   float:right;
