@@ -36,7 +36,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
          <div style="width:100%;">
             <h1 style="text-align: center;">About:</h1>
             <p style="text-align: center;">Created by nature millions of years ago, minerals are works of art with breathtaking aesthetics, incredible geometric shapes and fabulous color palette.</p>
-              <div style="width:auto;height:50%">
+            <div style="width:auto;height:50%">
 
                 <div style="padding-right: 10px;">
                  <img src="../images/mim1.jpg" style="width: 50%;float:left">
