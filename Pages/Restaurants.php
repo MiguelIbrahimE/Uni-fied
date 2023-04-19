@@ -87,7 +87,7 @@ try {
                       
                      </ol>
                      <h2 class="post-title">
-                       <?php echo  '<a href=./'.$name.'.php'; ?>target="_blank"><?php echo''.$name ?>
+                       <?php echo  '<a href=./'.$name.'.php target="_blank">';?><?php echo''.$name ?>
                        </a>
                      </h2>
                      <?php
