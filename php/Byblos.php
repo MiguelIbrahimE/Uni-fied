@@ -1,12 +1,14 @@
 <?php
-session_start();
-
-if (!isset($_SESSION["uid"])) {
-    header("Location: ../index.html");
-    exit();
-}
-
-?>
+  
+   if (session_status() == PHP_SESSION_NONE) {
+     session_start();
+   }
+   if(!isset($_SESSION["user_name"])){
+     header("Location: ../index.php");
+     exit();
+   }
+   $usrnm = $_SESSION["user_name"];
+  ?>
 
 <!DOCTYPE html>
 <html lang="en">

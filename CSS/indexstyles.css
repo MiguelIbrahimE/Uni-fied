@@ -437,10 +437,14 @@ h1{
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 5px;
+  padding: 70px;
   font-size: 18px;
   opacity: 0;
   transition: opacity 0.5s;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 70px 0;
+  vertical-align: middle;
 }
 
 
@@ -455,4 +459,20 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media only screen and (max-width: 767px) {
+    .content_img {
+      width: 100%;
+    }
+    .img-text {
+      font-size: 1.5em;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+  .section-center {
+    /* add these properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

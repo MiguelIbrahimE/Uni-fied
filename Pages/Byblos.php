@@ -17,10 +17,7 @@
   
   <script src="../JS/app.js"></script>  
   <script src="../JS/SearchBar.min.js"></script> 
-  <br>
-  <br>
-  <br>
-  <br>
+ 
     <div>
        <div style="width:50%;float:left;">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.0354768391144!2d35.644276915216786!3d34.11984148058762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f5cac247f1d31%3A0xeaa60abda1f03ce9!2sByblos%20Citadel!5e0!3m2!1sen!2slb!4v1677266816948!5m2!1sen!2slb" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>

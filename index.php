@@ -37,21 +37,19 @@
   <br>
   <br>
   <div style="padding: 10%;">
+  <div>
+    <div class="content_img" style="float: left; width: 45%; padding-bottom: 10px;">
+      <img src="./Heritage/Anjar2.jpg" style="width: 100%;" onclick="Tourism();">
+      <div class="img-text" style="text-align: center;">Tourism</div>
+    </div>
     <div>
-      <div class="content_img" style="float: left; width: 45%; padding-bottom: 10px;">
-        <img src="./Heritage/Anjar2.jpg" style="width: 100%;" onclick="Tourism();">
-        <div style="text-align: center;">Tourism</div>
+      <div class="content_img" style="float: right; width: 47%; padding-bottom: 10px;">
+        <img src="./Restaurants/Osaka Sushi Lounge.jpg" style="width: 100%;" onclick="Restau()">
+        <div class="img-text" style="text-align: center;">Restaurants</div>
       </div>
-      <div>
-        <div class="content_img" style="float: right; width: 47%; padding-bottom: 10px;">
-          <img src="./Restaurants/Osaka Sushi Lounge.jpg" style="width: 100%;" onclick="Restau()">
-          <div style="text-align: center;">Restaurants</div>
-        </div>
-      </div>
-      <div></div>
-      <div></div>
     </div>
   </div>
+</div>
    <br>
    <br>
    <br>

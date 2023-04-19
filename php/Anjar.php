@@ -20,6 +20,17 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
 ?>
 <body>
+  <?php
+  
+   if (session_status() == PHP_SESSION_NONE) {
+     session_start();
+   }
+   if(!isset($_SESSION["user_name"])){
+     header("Location: ../index.php");
+     exit();
+   }
+   $usrnm = $_SESSION["user_name"];
+  ?>
 <?php 
     require_once "../navbar/navbar.php";
     loadNavBar();

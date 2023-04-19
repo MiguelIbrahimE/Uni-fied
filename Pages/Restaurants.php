@@ -7,7 +7,7 @@
    <link rel="icon" href="../logo-no-background.png">
   <link rel="stylesheet" type="text/css" href="../CSS/restaurants.css">
   <!--Burger Icon-->
- 
+  <title>Restaurants - UULebanon</title>
 </head>
 <body>
   <!-- Start of HTML and NavBar-->
@@ -87,7 +87,7 @@ try {
                       
                      </ol>
                      <h2 class="post-title">
-                       <a href="https://www.instagram.com/nasmabeyrouth/?hl=en" target="_blank"><?php echo''.$name ?>
+                       <?php echo  '<a href=./'.$name.'.php'; ?>target="_blank"><?php echo''.$name ?>
                        </a>
                      </h2>
                      <?php
