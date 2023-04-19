@@ -32,7 +32,7 @@
   <div class="cards">
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/Buses.jpg">
+        <img class="card__image" src="../Transportation/Public Transportation.jpg">
       </div>
       <div class="card-title">
         </a>
@@ -47,7 +47,7 @@
     
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/AlloTaxi.jpg"/>
+        <img class="card__image" src="../Transportation/Allo Taxi.jpg"/>
       </div>
       <div class="card-title">
         <h2>
@@ -80,7 +80,7 @@
     </div>
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/Careem.png" />
+        <img class="card__image" src="../Transportation/Careem.jpg" />
       </div>
       <div class="card-title">
         <h2>
@@ -95,7 +95,7 @@
   
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/bolt.png" />
+        <img class="card__image" src="../Transportation/bolt.jpg" />
       </div>
       <div class="card-title">
         

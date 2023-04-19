@@ -497,6 +497,15 @@ filter: grayscale(0%);
     color:rgb(221, 197, 197);
     text-decoration: none;
   }
+  a:hover {
+    text-decoration: underline;
+    color:green;
+    
+    }
+    a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    }
   .menu {
     position: fixed;
     top: 0;

@@ -62,7 +62,7 @@
     document.location.href="./Pages/Restaurants.php"
   }
   function Tourism(){
-    document.location.href="./Pages/Restaurants.php"
+    document.location.href="./Pages/Tourism.php"
   }
 </script>
 </html>
