@@ -38,7 +38,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
          <div style="width:100%;">
             <h1 style="text-align: center;">About:</h1>
-            <p style="text-align: center;font-size:12px">The collection begun after World War I, and the museum was officially opened in 1942. The museum has collections totaling about 100,000 objects, most of which are antiquities and medieval finds from excavations undertaken by the Directorate General of Antiquities. About 1300 artifacts are exhibited, ranging in date from prehistoric times to the medieval Mamluk period. </p>
+            <p style="text-align: center;font-size:14px">The collection begun after World War I, and the museum was officially opened in 1942. The museum has collections totaling about 100,000 objects, most of which are antiquities and medieval finds from excavations undertaken by the Directorate General of Antiquities. About 1300 artifacts are exhibited, ranging in date from prehistoric times to the medieval Mamluk period. </p>
             <div style="width:auto;height:50%">
 
                 <div style="padding-right: 10px;">
@@ -58,9 +58,10 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     <div class="weather-card" style="padding-left:10px;width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
-    <h2 id="city-name">City Name</h2>
+    <h2 id="city-name" style="font-size:14px">City Name</h2>
     <h3 id="temperature">Temperature</h3>
     <p id="description">Weather Description</p>
+    <p id="precipitation">Precipitation</p>
   </div>
 </div>
 </body>

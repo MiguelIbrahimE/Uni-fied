@@ -28,7 +28,7 @@
   <div style="position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);">
         
 
-        <div style="width:100%;font-size:12px">
+        <div style="width:100%;font-size:14px">
            <h1 style="text-align: center;">About:</h1>
            <p style="text-align: center;">In it there is Beiteddine Palace, which was built by Emir Bechir el Chehabi II (who ruled Mount Lebanon for more than half a century). This palace is the best example of 19th century Lebanese architecture; it was built over a thirty year period of time.
 
@@ -54,7 +54,7 @@ In order to reach Beiteddine, one has to pass through Deir el Qamar and Mousa Ca
 <div class="weather-card" style="padding-left:10px; width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
-    <h2 id="city-name">City Name</h2>
+    <h2 id="city-name"style="font-size:1rem">City Name</h2>
     <h3 id="temperature">Temperature</h3>
     <p id="description">Weather Description</p>
   </div>

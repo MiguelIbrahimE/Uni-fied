@@ -49,7 +49,7 @@
     <div class="weather-card" style="padding-left:10px; width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
-    <h2 id="city-name">City Name</h2>
+    <h2 id="city-name" style="font-size:1rem">City Name</h2>
     <h3 id="temperature">Temperature</h3>
     <p id="description">Weather Description</p>
   </div>

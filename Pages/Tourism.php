@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <link rel="icon" href="../logo-no-background.png">
-  
+  <title>Tourism - UULebanon</title>
 </head>
 <body>
 <style>
