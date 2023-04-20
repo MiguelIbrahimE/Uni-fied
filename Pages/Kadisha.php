@@ -51,9 +51,7 @@
 
         <div style="width:100%;">
            <h1 style="text-align: center;">About:</h1>
-           <p style="text-align: center;">Beiteddine is 850 meters above the sea level. In it there is Beiteddine Palace, which was built by Emir Bechir el Chehabi II (who ruled Mount Lebanon for more than half a century). This palace is the best example of 19th century Lebanese architecture; it was built over a thirty year period of time.
-
-In order to reach Beiteddine, one has to pass through Deir el Qamar and Mousa Castle, and a 6 kilometer drive on the main road. </p>
+           <p style="text-align: center;">The Qadisha valley is one of the most important early Christian monastic settlements in the world. Its monasteries, many of which are of a great age, stand in dramatic positions in a rugged landscape. Nearby are the remains of the great forest of cedars of Lebanon, highly prized in antiquity for the construction of great religious buildings.</p>
            <div style="width:auto;height:50%">
 
                <div style="padding-right: 10px;">

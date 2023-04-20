@@ -54,7 +54,7 @@ fetch(apiUrl)
                 </div>
                <div>
                 
-                 <img src="../Heritage/Anjar2.jpg" style="width: 50%;float:right">
+                 <img src="../images/ruin-6784489.jpg" style="width: 50%;float:right">
                  <div style="width:100%;height:35%">
              
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.443306833477!2d36.2038155512128!3d34.006830180523224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518a162051b92a1%3A0x8e971363504900cf!2sBaalbek%20Roman%20Ruins!5e0!3m2!1sen!2slb!4v1677235799713!5m2!1sen!2slb" width='100%' height="100%" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

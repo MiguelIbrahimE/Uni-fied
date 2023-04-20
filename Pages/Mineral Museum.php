@@ -56,10 +56,10 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
         <div style="width:100%;">
            <h1 style="text-align: center;">About:</h1>
-           <p style="text-align: center;">Beiteddine is 850 meters above the sea level. In it there is Beiteddine Palace, which was built by Emir Bechir el Chehabi II (who ruled Mount Lebanon for more than half a century). This palace is the best example of 19th century Lebanese architecture; it was built over a thirty year period of time.
+           <p style="text-align: center;">
+           mim is a private mineral museum in Beirut, Lebanon. It exhibits more than 1800 minerals, representing some 400 different species from over 70 countries. Created by nature itself, those works of art with their breathtaking aesthetics were formed in earth’s crust millions of years ago.
 
-In order to reach Beiteddine, one has to pass through Deir el Qamar and Mousa Castle, and a 6 kilometer drive on the main road. </p>
-           <div style="width:auto;height:50%">
+            <div style="width:auto;height:50%">
 
                <div style="padding-right: 10px;">
                <img src="../images/mim1.jpg" style="width: 50%;float:left">
