@@ -24,7 +24,7 @@
 <body>
   <!-- Start of HTML and NavBar-->
   <?php 
-    require_once "../navbar/navbar.php";
+    require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
   <br><br><br><br>

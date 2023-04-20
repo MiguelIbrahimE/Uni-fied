@@ -23,7 +23,7 @@
             <li><a href="./Pages/Restaurants.php">Restaurants</a></li>
             <li><a href="./Pages/Transportation.php">Transportation</a></li>
             <li><a href="./Pages/Lebanon.php">Map of Lebanon</a></li>
-            <li><a href="./users//register_form.php">Sign In</a></li>
+            <li><a href="./users/register_form.php">Sign In</a></li>
         </ul>
     </nav>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

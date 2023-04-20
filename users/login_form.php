@@ -1,6 +1,6 @@
 <?php
 
-@include './config.php';
+include_once './config.php';
 ini_set('session.gc_maxlifetime', 3600); // Set session lifetime to 1 hour
 ini_set('session.cookie_lifetime', 3600); // Set cookie lifetime to 1 hour
 session_start();
@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
          // Generate a hash of the encrypted data
          $hash = hash('sha256', $ciphertext);
          $_SESSION['user_name'] = $hash;
-         header('location:../php/Tourism.php');
+         header('location: ../php/Tourism.php');
 
       }
      
