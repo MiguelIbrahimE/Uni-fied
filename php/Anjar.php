@@ -12,6 +12,7 @@
     <link rel="icon" href="../logo-no-background.png">
    <link rel="stylesheet" href="../CSS/Moreinfo.css">
     <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    
     <script>
   let apiKey = "7c906fd2f1359b69d792183ac6cc79bc";
 let city = "Anjar";
@@ -44,7 +45,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 <body>
   <br> <br> <br> <br>
 <?php 
-    require_once "../navbar/navbar.php";
+    require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
 
