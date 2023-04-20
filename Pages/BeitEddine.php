@@ -14,6 +14,7 @@
 </head>
 <body>
   <br> <br> <br> <br> 
+  
 <?php 
     require_once "../navbar/navbar.php";
     loadNavBar();
@@ -27,9 +28,9 @@
   <div style="position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);">
         
 
-        <div style="width:100%;">
+        <div style="width:100%;font-size:12px">
            <h1 style="text-align: center;">About:</h1>
-           <p style="text-align: center;">Beiteddine is 850 meters above the sea level. In it there is Beiteddine Palace, which was built by Emir Bechir el Chehabi II (who ruled Mount Lebanon for more than half a century). This palace is the best example of 19th century Lebanese architecture; it was built over a thirty year period of time.
+           <p style="text-align: center;">In it there is Beiteddine Palace, which was built by Emir Bechir el Chehabi II (who ruled Mount Lebanon for more than half a century). This palace is the best example of 19th century Lebanese architecture; it was built over a thirty year period of time.
 
 In order to reach Beiteddine, one has to pass through Deir el Qamar and Mousa Castle, and a 6 kilometer drive on the main road. </p>
            <div style="width:auto;height:50%">
@@ -40,7 +41,7 @@ In order to reach Beiteddine, one has to pass through Deir el Qamar and Mousa Ca
               <div>
                
                 <img src="../Heritage/be2.jpg" style="width: 50%;float:right">
-                <div style="width:100%;height:35%">
+                <div style="width:100%;height:25%">
             
              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6639.125077687026!2d35.5767963!3d33.6943899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f203c75459d93%3A0x339c929930abd754!2sBeiteddine%20Palace!5e0!3m2!1sen!2slb!4v1681980306873!5m2!1sen!2slb" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>  
@@ -50,7 +51,7 @@ In order to reach Beiteddine, one has to pass through Deir el Qamar and Mousa Ca
         </div>
    </div>
 </div> 
-<div class="weather-card" style="padding-left:10px;">
+<div class="weather-card" style="padding-left:10px; width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
     <h2 id="city-name">City Name</h2>

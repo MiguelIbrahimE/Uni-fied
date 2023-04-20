@@ -36,10 +36,15 @@ html {
   scroll-behavior: smooth;
   height: -webkit-fill-available;
 }
-
+html{
+  background: #c3c2c2;
+}
+body{
+  background: #c3c2c2;
+}
 /* Styles for body */
 body {
-  background: #ececec;
+  
   color: #787676;
   font-family:serif;
   text-rendering: optimizeLegibility;

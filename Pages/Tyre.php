@@ -12,7 +12,7 @@
     <link rel="icon" href="../logo-no-background.png">
    <link rel="stylesheet" href="../CSS/Moreinfo.css">
     <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
-    <script src="Tyre.js"></script>
+    <script src="../JS/Tyre.js"></script>
   
     </script>
   </head>
@@ -38,7 +38,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
          <div style="width:100%;">
             <h1 style="text-align: center;">About:</h1>
-            <p style="text-align:center">"Located on the southern coast of Lebanon, 83 km south of Beirut, the antique town of Tyre was the great Phoenician city that reigned over the seas and founded prosperous colonies such as Cadiz and Carthage and according to legend, was the place of the discovery of purple pigment."~UNESCO</p>
+            <p style="text-align:center;font-size:12px">"Located on the southern coast of Lebanon, 83 km south of Beirut, the antique town of Tyre was the great Phoenician city that reigned over the seas and founded prosperous colonies such as Cadiz and Carthage and according to legend, was the place of the discovery of purple pigment."~UNESCO</p>
   <div style="width:auto;height:50%">
 
                 <div style="padding-right: 10px;">
@@ -55,7 +55,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
          </div>
          
     </div>
-    <div class="weather-card" style="padding-left:10px;">
+    <div class="weather-card" style="padding-left:10px; width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
     <h2 id="city-name">City Name</h2>

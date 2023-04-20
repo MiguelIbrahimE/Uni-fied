@@ -38,7 +38,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
         <div style="width:100%;">
            <h1 style="text-align: center;">About:</h1>
-           <p style="text-align: center;">
+           <p style="text-align: center;font-size:12px">
            mim is a private mineral museum in Beirut, Lebanon. It exhibits more than 1800 minerals, representing some 400 different species from over 70 countries. Created by nature itself, those works of art with their breathtaking aesthetics were formed in earth’s crust millions of years ago.
 
             <div style="width:auto;height:50%">
@@ -59,7 +59,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
         </div>
    </div>
 </div> 
-<div class="weather-card" style="padding-left:10px;">
+<div class="weather-card" style="padding-left:10px;width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
     <h2 id="city-name">City Name</h2>

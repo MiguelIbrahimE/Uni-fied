@@ -33,7 +33,7 @@
 
         <div style="width:100%;">
            <h1 style="text-align: center;">About:</h1>
-           <p style="text-align: center;">The Qadisha valley is one of the most important early Christian monastic settlements in the world. Its monasteries, many of which are of a great age, stand in dramatic positions in a rugged landscape. Nearby are the remains of the great forest of cedars of Lebanon, highly prized in antiquity for the construction of great religious buildings.</p>
+           <p style="text-align: center;font-size:12px">The Qadisha valley is one of the most important early Christian monastic settlements in the world. Its monasteries, many of which are of a great age, stand in dramatic positions in a rugged landscape. Nearby are the remains of the great forest of cedars of Lebanon, highly prized in antiquity for the construction of great religious buildings.</p>
            <div style="width:auto;height:50%">
 
                <div style="padding-right: 10px;">
@@ -53,7 +53,7 @@
    </div>
 </div> 
 
-<div class="weather-card" style="padding-left:10px;">
+<div class="weather-card" style="padding-left:10px; width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
     <h2 id="city-name">City Name</h2>

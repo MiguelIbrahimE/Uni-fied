@@ -10,12 +10,18 @@
   </style>
      <style>a:hover {
   text-decoration: underline;
-  color:green;
+  color:#285D34;
   
 }
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+html{
+  background-color: #F2F3F4;
+}
+body{
+  background-color: #F2F3F4;
 }
 </style>
 <?php 

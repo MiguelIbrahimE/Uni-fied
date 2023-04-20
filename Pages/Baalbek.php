@@ -28,7 +28,7 @@
 
          <div style="width:100%;">
             <h1 style="text-align: center;">About:</h1>
-            <p style="text-align: center;">"Founded during the Umayyad period under Caliph Walid Ibn Abd Al-Malak (705-715), the city of Anjar bears outstanding witness to the Umayyad civilization. Anjar is an example of an inland commercial centre, at the crossroads of two important routes: one leading from Beirut to Damascus and the other crossing the Bekaa and leading from Homs to Tiberiade." ~<a href="https://whc.unesco.org/en/list/293/"style="text-decoration:none">UNESCO</a></p>
+            <p style="text-align: center; font-size:12px">"Founded during the Umayyad period under Caliph Walid Ibn Abd Al-Malak (705-715), the city of Anjar bears outstanding witness to the Umayyad civilization. Anjar is an example of an inland commercial centre, at the crossroads of two important routes: one leading from Beirut to Damascus and the other crossing the Bekaa and leading from Homs to Tiberiade." ~<a href="https://whc.unesco.org/en/list/293/"style="text-decoration:none">UNESCO</a></p>
             <div style="width:auto;height:50%">
 
                 <div style="padding-right: 10px;">
@@ -46,14 +46,14 @@
          </div>
         
     </div>
-    <div class="weather-card" style="padding-left:10px;">
+    <div class="weather-card" style="padding-left:10px; width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
     <h2 id="city-name">City Name</h2>
     <h3 id="temperature">Temperature</h3>
     <p id="description">Weather Description</p>
   </div>
-</div>
- 
+
+              </div>
     </body>
 </html>

@@ -30,7 +30,7 @@
 
         <div style="width:100%;">
            <h1 style="text-align: center;">About:</h1>
-           <p style="text-align: center;">"The ruins of many successive civilizations are found at Byblos, one of the oldest Phoenician cities. Inhabited since Neolithic times, it has been closely linked to the legends and history of the Mediterranean region for thousands of years. Byblos is also directly associated with the history and diffusion of the Phoenician alphabet." ~ <a hef="https://whc.unesco.org/en/list/295/">UNESCO</a></p>
+           <p style="text-align: center;font-size:12px">"The ruins of many successive civilizations are found at Byblos, one of the oldest Phoenician cities. Inhabited since Neolithic times, it has been closely linked to the legends and history of the Mediterranean region for thousands of years. Byblos is also directly associated with the history and diffusion of the Phoenician alphabet." ~ <a hef="https://whc.unesco.org/en/list/295/">UNESCO</a></p>
            <div style="width:auto;height:50%">
 
                <div style="padding-right: 10px;">
@@ -48,7 +48,7 @@
        
    </div>
 </div> 
-<div class="weather-card" style="padding-left:10px;">
+<div class="weather-card" style="padding-left:10px;width:25%">
   <img src="" alt="Weather Icon" id="weather-icon">
   <div class="weather-info">
     <h2 id="city-name">City Name</h2>
