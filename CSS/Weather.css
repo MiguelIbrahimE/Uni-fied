@@ -1,0 +1,40 @@
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+input {
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+}
+
+button {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	background-color: #2196F3;
+	color: #fff;
+	cursor: pointer;
+}
+
+#weather-info {
+	font-size: 24px;
+}

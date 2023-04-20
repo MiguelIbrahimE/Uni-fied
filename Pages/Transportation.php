@@ -71,7 +71,7 @@
         </a>
         <h2>
           
-           <a href="https://www.uber.com/us/en/ride/"target="">Uber</a>
+           <a href="https://www.uber.com/us/en/ride/"target="_blank">Uber</a>
            <small></small>
           </h2>
           

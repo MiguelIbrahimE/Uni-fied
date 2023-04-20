@@ -35,7 +35,7 @@
 </head>
 <body>
 <?php 
-    require_once "../navbar/navbar.php";
+    require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
 

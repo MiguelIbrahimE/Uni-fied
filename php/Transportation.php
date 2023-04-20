@@ -1,23 +1,11 @@
-<?php
-  
-   if (session_status() == PHP_SESSION_NONE) {
-     session_start();
-   }
-   if(!isset($_SESSION["user_name"])){
-     header("Location: ../index.php");
-     exit();
-   }
-   $usrnm = $_SESSION["user_name"];
-  ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transportation</title>
-    <link rel="icon" href="../Lebanese_Flag.ico">
+    <title>Transportation - UULebanon </title>
+    <link rel="icon" href="../logo-no-background.png">
     <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet"href="../CSS/Transportation.css">
@@ -25,30 +13,32 @@
 
 </head>
 <body>
-<?php 
+ 
+ <!-- Start of HTML and NavBar-->
+  <!-- Start of HTML and NavBar-->
+  <?php 
     require_once "../navbar/navbar.php";
     loadNavBar();
-   
-   ?>
+    ?>
+
 
 
   <script src="../JS/app.js"></script>  
-  <script src="../JS/SearchBar.js"></script>  
-
-
+  <script src="../JS/SearchBar.min.js"></script>   
+  <br>
   
   <!--Cards-->
   
   <div class="cards">
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/Buses.jpg">
+        <img class="card__image" src="../Transportation/Public Transportation.jpg">
       </div>
       <div class="card-title">
         </a>
         <h2>
           
-          <a href="./Buses.html"target="_blank">Public Transportation</a>
+          <a href="./Buses.php"target="_blank">Public Transportation</a>
           
         </h2>
       <small>Please take a note that public transportation in Lebanon is behind and that the prices are constantly changing.</small>
@@ -57,7 +47,7 @@
     
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/AlloTaxi.jpg"/>
+        <img class="card__image" src="../Transportation/Allo Taxi.jpg"/>
       </div>
       <div class="card-title">
         <h2>
@@ -75,7 +65,7 @@
         <img class="card__image" src="../Transportation/uber.jpg" />
       </div>
       <div class="card-title">
-        <a href="https://www.uber.com/us/en/ride/" target="_blank" class="toggle-info btn">
+        <a href="#" class="toggle-info btn">
           <span class="left"></span>
           <span class="right"></span>
         </a>
@@ -90,7 +80,7 @@
     </div>
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/Careem.png" />
+        <img class="card__image" src="../Transportation/Careem.jpg" />
       </div>
       <div class="card-title">
         <h2>
@@ -105,7 +95,7 @@
   
     <div class="card">
       <div class="card__image-holder">
-        <img class="card__image" src="../Transportation/bolt.png" />
+        <img class="card__image" src="../Transportation/bolt.jpg" />
       </div>
       <div class="card-title">
         
@@ -122,6 +112,7 @@
   
   </div>
   <!-- End of Card Layout-->
- 
+ <br>
+ <br>
 </body>
 </html>

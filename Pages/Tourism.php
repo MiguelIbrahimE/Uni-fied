@@ -64,7 +64,6 @@ try {
 $pdo = null;
 ?>
 </div>
-</body>
 <script>
    // Open and Close Navbar Menu
 const navbarMenu = document.getElementById("menu");
@@ -166,5 +165,7 @@ function run(){
   }
 </script>
 
+
+</body>
 
 </html>

@@ -43,13 +43,17 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
   <script>
-   // Set up Leaflet map
-var map = L.map('map').setView([33.8547, 35.8623], 9);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+    // Set up Leaflet map
+    var map = L.map('map').setView([33.8547, 35.8623], 9);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
   tileSize: 512,
-  zoomOffset: -1
+  zoomOffset: -1,
+  id: 'mapbox/streets-v11',
+  accessToken: 'pk.eyJ1IjoiZ3JlZWR5LWJyZWVkeSIsImEiOiJjbGdvdHN1d3gwOWhtM3Vtcmk4NWJrcXhjIn0.iau16Y5P_adDmnt3Ien8Rw'
 }).addTo(map);
 
 // Load bus route data
