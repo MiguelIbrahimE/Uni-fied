@@ -8,11 +8,32 @@
     <link rel="icon" href="../logo-no-background.png">
     <link rel="stylesheet"href="../CSS/Moreinfo.css">
     <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    <script>
+  
 
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Baalbek&appid=7c906fd2f1359b69d792183ac6cc79bc&units=metric`;
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    let temperature = data['main']['temp'];
+    let description = data['weather'][0]['description'];
+    let icon = data['weather'][0]['icon'];
+
+    document.getElementById("city-name").innerHTML = data['name'];
+    document.getElementById("temperature").innerHTML = `${temperature}&deg;C`;
+    document.getElementById("description").innerHTML = description;
+    document.getElementById("weather-icon").setAttribute("src", `https://openweathermap.org/img/w/${icon}.png`);
+  })
+  .catch(error => console.log(error));
+
+  </script>
 </head>
 <body>
+    <br> <br> <br> <br>
 <?php 
-    require_once "../navbar/logedinbar.php";
+     require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
     <script src="../JS/SearchBar.min.js"></script> 
@@ -33,17 +54,24 @@
                 </div>
                <div>
                 
-                 <img src="../Heritage/Anjar2.jpg" style="width: 50%;float:right">
-                 <div style="width:35%;height:35%">
-              </div style="width:35%;height:30%">
+                 <img src="../images/ruin-6784489.jpg" style="width: 50%;float:right">
+                 <div style="width:100%;height:35%">
+             
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.443306833477!2d36.2038155512128!3d34.006830180523224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518a162051b92a1%3A0x8e971363504900cf!2sBaalbek%20Roman%20Ruins!5e0!3m2!1sen!2slb!4v1677235799713!5m2!1sen!2slb" width='100%' height="100%" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                </div>  
             </div>
-            
+            </div>
          </div>
         
     </div>
-    
+    <div class="weather-card" style="padding-left:10px;">
+  <img src="" alt="Weather Icon" id="weather-icon">
+  <div class="weather-info">
+    <h2 id="city-name">City Name</h2>
+    <h3 id="temperature">Temperature</h3>
+    <p id="description">Weather Description</p>
+  </div>
+</div>
  
     </body>
 </html>

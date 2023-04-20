@@ -1,3 +1,13 @@
+<?php
+  if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+  if(!isset($_SESSION["user_name"])){
+    header("Location: ../index.php");
+    exit();
+  }
+  $usrnm = $_SESSION["user_name"];
+?>
 
 
 <!DOCTYPE html>
@@ -12,7 +22,28 @@
     <link rel="icon" href="../logo-no-background.png">
    <link rel="stylesheet" href="../CSS/Moreinfo.css">
     <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
-</head>
+    <script>
+  
+
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Beirut&appid=7c906fd2f1359b69d792183ac6cc79bc&units=metric`;
+  
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      let temperature = data['main']['temp'];
+      let description = data['weather'][0]['description'];
+      let icon = data['weather'][0]['icon'];
+  
+      document.getElementById("city-name").innerHTML = data['name'];
+      document.getElementById("temperature").innerHTML = `${temperature}&deg;C`;
+      document.getElementById("description").innerHTML = description;
+      document.getElementById("weather-icon").setAttribute("src", `https://openweathermap.org/img/w/${icon}.png`);
+    })
+    .catch(error => console.log(error));
+  
+    </script>
+  </head>
 <?php 
 require "../config/cfg.php";
 $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -21,7 +52,7 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 ?>
 <body>
 <?php 
-    require_once "../navbar/navbar.php";
+    require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
     
@@ -45,14 +76,21 @@ $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
                 
                  <img src="../images/nm2.jpg" style="width: 50%;float:right">
                </div>
-               <div style="width:35%;height:30%">
+               <div style="width:100%;height:30%">
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.382226852332!2d35.5119313152105!3d33.87980858065314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1705ab8bd363%3A0xb28421716fea4f82!2sMIM%20Mineral%20Museum!5e0!3m2!1sen!2slb!4v1681837582978!5m2!1sen!2slb" width='100%' height="100%" style="border:0;" float="left" display="inline-block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
          </div>
          
     </div>
-
+    <div class="weather-card" style="padding-left:10px;">
+  <img src="" alt="Weather Icon" id="weather-icon">
+  <div class="weather-info">
+    <h2 id="city-name">City Name</h2>
+    <h3 id="temperature">Temperature</h3>
+    <p id="description">Weather Description</p>
+  </div>
+</div>
 </body>
 
 </html> 

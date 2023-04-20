@@ -1,3 +1,14 @@
+<?php
+  if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+  if(!isset($_SESSION["user_name"])){
+    header("Location: ../index.php");
+    exit();
+  }
+  $usrnm = $_SESSION["user_name"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +28,7 @@
  <!-- Start of HTML and NavBar-->
   <!-- Start of HTML and NavBar-->
   <?php 
-    require_once "../navbar/navbar.php";
+    require_once "../navbar/logedinbar.php";
     loadNavBar();
     ?>
 
