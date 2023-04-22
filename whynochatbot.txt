@@ -1,0 +1,6 @@
+ Will take too much compute power from the 
+ device which is unecessary, computing on the server 
+ and sending the results as well takes time and I have 
+ tried that actually, it should access the database and 
+ should access a machine learning algorithm both  in parallel
+which is not optimal, especially for the user experience

@@ -447,7 +447,10 @@ filter: grayscale(0%);
     text-decoration: none;
 
   }
-  
+  button{
+    background-color: red;
+    color:#e31b23;
+  }
   .section {
     margin: 0 auto;
     padding: 6rem 0 1rem;

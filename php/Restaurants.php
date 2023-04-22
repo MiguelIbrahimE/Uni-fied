@@ -15,6 +15,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    function review(name) {
+    var rating = prompt("Please enter your rating (out of 5):");
+    if (rating != null && rating != "" && !isNaN(rating)) {
+      rating = Math.min(Math.max(parseInt(rating), 1), 5);
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          var result = JSON.parse(xhr.responseText);
+          alert(result.message);
+        }
+      };
+      xhr.open("POST", "review.php", true);
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.send("name=" + name + "&rating=" + rating);
+    }
+  }
+    </script>
   <!--Head-->
    <link rel="icon" href="../logo-no-background.png">
   <link rel="stylesheet" type="text/css" href="../CSS/restaurants.css">
@@ -107,7 +125,8 @@ try {
                      
                    echo  '<p> Rating: '.$ratings.' Rated by: '.$nmb_rating.' users</p>';?>
                     
-                    
+                    <button onclick="review('<?php echo $name; ?>')">Review</button>
+
                    </figcaption>
                  </figure>
                </article>

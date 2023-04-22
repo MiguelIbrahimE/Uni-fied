@@ -1,3 +1,4 @@
+<!---Non Dynamic Web Page--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,6 @@
     <link rel="stylesheet"href="./CSS/indexstyles.css">
 </head>
 <body>
-  <script src="./searchbar.js"></script>
     <a href="index.html" class="logo" target="_blank">
         <img src="./logo-color.png" alt=""  style="width:50px;height:50px">
     </a>
