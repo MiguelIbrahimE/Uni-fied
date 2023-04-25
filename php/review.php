@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $check_result = $db->query($check_query);
       if ($check_result->num_rows > 0) {
         $response = array("status" => "error", "message" => "You have already rated this restaurant.");
+        echo "<script>alert('You have already rated this restaurant.');</script>";
         echo json_encode($response);
       } else {
         $current_rating = $result["Rating"];
@@ -43,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die('Failed to insert rating: ' . $db->error);
         } else {
           $response = array("status" => "success", "message" => "Review added successfully.");
+          echo "<script>alert('Review added successfully.');</script>";
           echo json_encode($response);
         }
       }
