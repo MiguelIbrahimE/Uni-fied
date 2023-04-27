@@ -40,7 +40,6 @@ html {
 
 /* Styles for body */
 body {
-
   font-family:serif;
   text-rendering: optimizeLegibility;
 }
@@ -329,9 +328,9 @@ span{
 .weather-card {
   border-radius: 10px;
   flex-direction: row;
-  margin: 20px;
   max-width: 600px;
   padding: 20px;
+  background-color: #635f5f!important;
 }
 
 .weather-card img {
