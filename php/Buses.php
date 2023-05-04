@@ -1,3 +1,7 @@
+
+<? require "./Controller/main.php";
+initializeSession();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +32,6 @@
     ?>
 
 
-  <script src="../JS/app.js"></script>  
   <script src="../JS/SearchBar.min.js"></script> 
 
   <br>

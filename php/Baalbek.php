@@ -1,3 +1,6 @@
+<? require "./Controller/main.php";
+initializeSession();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +40,7 @@ fetch(apiUrl)
     loadNavBar();
     ?>
     <script src="../JS/SearchBar.min.js"></script> 
-  <script src="../JS/app.js"></script>   
+    
     
 
   

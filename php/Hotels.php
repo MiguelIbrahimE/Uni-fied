@@ -1,3 +1,6 @@
+<? require "./Controller/main.php";
+initializeSession();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 

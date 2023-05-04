@@ -1,4 +1,6 @@
-
+<? require "./Controller/main.php";
+initializeSession();
+?>
 
 <!DOCTYPE html>
 <!--Let's GET WAMPY!!-->
