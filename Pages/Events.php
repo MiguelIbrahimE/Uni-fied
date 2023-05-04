@@ -577,7 +577,7 @@ a{
 			$html = str_get_html($html); // Updated to use str_get_html function
             $events_array = array(); // Initialize the array outside of the foreach loop
 
-foreach ($html->find('div#ctl00_MainContent_HpEvents_rptEvents_ctl00_ItemFeatured') as $event) { // Changed the variable name to $event to be more descriptive
+foreach ($html->find('div.containerMix') as $event) { // Changed the variable name to $event to be more descriptive
 $event_data = array();
 $event_data['title'] = $event->find('.event-title', 0) ? $event->find('.event-title', 0)->plaintext : '';
 $event_data['date'] = $event->find('.event-date', 0) ? $event->find('.event-date', 0)->plaintext : '';
