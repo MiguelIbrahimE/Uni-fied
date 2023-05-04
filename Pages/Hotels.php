@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
+<script>
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+ </script> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotels - UULebanon</title>

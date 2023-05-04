@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+ </script> 
 	<title>Scraping Results</title>
 	<style type="text/css">
 		table {

@@ -117,6 +117,11 @@ $pdo = null;
   function run(){
     const id=document.getElementById();
     
+    
   }
+
 </script>
+<script>
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+ </script> 
 </html>

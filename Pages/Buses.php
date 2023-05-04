@@ -2,6 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <script>
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+ </script> 
   <title>Bus Connections - UULebanon </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
  <link rel="stylesheet" href="../CSS/Busses.css" />

@@ -24,7 +24,10 @@
 
 
   <script src="../JS/app.js"></script>  
-  <script src="../JS/SearchBar.min.js"></script>   
+  <script src="../JS/SearchBar.min.js"></script>  
+  <script>
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+ </script> 
   <br>
   
   <!--Cards-->
