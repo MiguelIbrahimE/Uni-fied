@@ -10,7 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet"href="./CSS/indexstyles.css">
-</head>
+
+  </head>
 <body>
     <a href="index.html" class="logo" target="_blank">
         <img src="./logo-color.png" alt=""  style="width:50px;height:50px">
@@ -27,8 +28,6 @@
         </ul>
     </nav>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    
-   
 <div style="align-items: center;align-self: center;">
     <h1 style="text-align: center;align-items: center; margin: 0%;">Discover and Explore Lebanon in a<br>Unique and Unified Way</h1>
   </div>
@@ -50,14 +49,15 @@
     </div>
   </div>
 </div>
-
-</body>
 <script>
   function Restau(){
-    document.location.href="./Pages/Restaurants.php"
+    window.location.href="./Pages/Restaurants.php";
   }
   function Tourism(){
-    document.location.href="./Pages/Tourism.php"
+    window.location.href="./Pages/Tourism.php";
   }
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+
 </script>
+</body>
 </html>

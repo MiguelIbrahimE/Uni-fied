@@ -169,6 +169,8 @@ function run(){
     alert("You need to be logged in to mark a place as visited");
     
   }
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+
 </script>
 
 
