@@ -90,3 +90,22 @@ if(isset($_POST['submit'])){
 </div>
 </body>
 </html>
+<!--
+   Documentation:
+   This code is a PHP script that handles user registration form submission. It does the following:
+
+    Includes the config.php file, which contains the database connection information.
+    Checks if the $conn variable is not set, which means the database connection failed, and displays an error message.
+    Starts a PHP session.
+    Checks if the user submitted the registration form by checking if the submit button was pressed.
+    Gets the current time using the date() function and assigns it to $current_time and $current_time2 variables.
+    Escapes special characters in the name and email input fields using the mysqli_real_escape_string() function and assigns them to the $name and $email variables, respectively.
+    Encrypts the password using the md5() function and assigns it to the $pass variable.
+    Checks if the password and confirm password fields match. If not, it adds an error message to the $error array.
+    Checks if a user with the same email and password already exists in the database. If so, it adds an error message to the $error array.
+    If there are no errors, it inserts the user's information into the users table in the database using the INSERT INTO SQL statement.
+    Gets the ID of the newly inserted user using the SELECT SQL statement.
+    Initializes the visited_sites table with the user's ID and site names from the touristic_sites table using the INSERT INTO SQL statement and a while loop.
+    Redirects the user to the login page using the header() function.
+
+The HTML code below the PHP script displays a registration form with the input fields for name, email, password, confirm password, and user type. If there are any errors, it displays them using the $error array. The form's action is blank, which means the form is submitted to the same page.--->

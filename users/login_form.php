@@ -86,3 +86,31 @@ if(isset($_POST['submit'])){
 </div>
 </body>
 </html>
+<!--
+   Documentation:
+   This code is a PHP script that handles user authentication on a login form. Here's what the code does:
+
+    The script includes the configuration file for the database connection using @include function.
+
+    The ini_set functions set the session lifetime and cookie lifetime to 1 hour.
+
+    The session_start function starts a new or resumes an existing session.
+
+    When the user submits the login form by clicking the submit button, the if statement checks if the submit button is set in the $_POST superglobal array.
+
+    The mysqli_real_escape_string function escapes special characters in the name and email fields of the $_POST array to prevent SQL injection attacks.
+
+    The md5 function hashes the password entered by the user.
+
+    The SELECT statement checks if there is a user with the given email and password in the database. If the user exists, the script retrieves the user_type field from the database.
+
+    If the user_type is admin, the script generates a secret key, encrypts the admin_name using AES encryption and the generated iv, and generates a hash of the encrypted data. Then, it sets the admin_name session variable and redirects the user to the admin_page.php.
+
+    If the user_type is user, the script encrypts the email using AES encryption and the generated iv, generates a hash of the encrypted data, and sets the user_name session variable. Then, it redirects the user to the Tourism.php page.
+
+    If the email and password entered by the user do not match any user in the database, an error message is displayed.
+
+    The HTML code creates a login form that asks the user to enter their email and password. If there is an error message, it is displayed next to the email field. If the user does not have an account, they can register by clicking on the link.
+
+Overall, the code checks if the user exists in the database and if so, sets session variables based on the user's role and redirects them to the appropriate page. If the user does not exist or the email and password do not match, an error message is displayed.
+   --->
