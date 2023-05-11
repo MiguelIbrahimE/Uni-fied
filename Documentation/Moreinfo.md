@@ -3,7 +3,7 @@ The following md fle explains the more info files such as:
 2. Beiteddine.php
 3. etc.
 
-This is a PHP script that displays information about the cities in Lebanon, including a description, images, and a map. It also displays the current weather in Anjar using data from the OpenWeatherMap API.
+This is a PHP script that displays information about the cities in Lebanon, including a description, images, and a map. It also displays the current weather in the city using data from the OpenWeatherMap API.
 
 Here is a breakdown of the code:
 

@@ -17,6 +17,7 @@ function loadNavBar(){
              <li class="menu-item"><a class="menu-link" href="./Tourism.php">Tourism</a></li>
              <li class="menu-item"><a class="menu-link" href="./Restaurants.php">Restaurants</a></li>
              <li class="menu-item"><a class="menu-link" href="./Lebanon.php">Map of Lebanon</a></li>
+             <li class="menu-item"><a class="menu-link" href="./Events.php">Events</a></li>
              <li class="menu-item"><a class="menu-link" href="./Transportation.php">Transportation</a></li>
              <li class="menu-item"><a class="menu-link" href="../users/register_form.php">Sign Up/Log In</a></li>
          </ul>

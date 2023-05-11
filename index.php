@@ -91,8 +91,9 @@ https://fonts.googleapis.com; img-src 'self';");--->
         <ul class="pt-5">
             <li><a href="./Pages/Tourism.php">Touristic-<br>Attractions</a></li>
             <li><a href="./Pages/Restaurants.php">Restaurants</a></li>
+            <li><a href="./Pages/Lebanon.php">Map Of lebanon</a></li>
+            <li><a href="./Pages/Transportation.php">Events</a></li>
             <li><a href="./Pages/Transportation.php">Transportation</a></li>
-            <li><a href="./Pages/Lebanon.php">Map of Lebanon</a></li>
             <li><a href="./users/register_form.php">Sign In</a></li>
         </ul>
     </nav>
