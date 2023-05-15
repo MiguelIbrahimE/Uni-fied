@@ -44,8 +44,7 @@
     </nav>
  </header>
 	<script src="../JS/SearchBar.min.js"></script>
-	<br><br><br><br>
-	<h1>Events:</h1>
+	
 	<br>
 	<table>
 		<thead>
