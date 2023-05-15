@@ -1,52 +1,56 @@
-<? 
-  if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-  }
-  if(!isset($_SESSION["user_name"])){
-    header("Location: ../index.php");
-    exit();
-  }
-  $usrnm = $_SESSION["user_name"];
-?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Scraping Results</title>
-    <style src="../CSS/Events.css"></style>
+<link rel="icon" href="../logo-no-background.png">
+ <link rel="stylesheet" href="../CSS/Events.css">
+<script>
+
+  header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self';");
+ </script> 
+	<title>Events - UULebanon</title>
 	<style type="text/css">
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-		th, td {
-			text-align: left;
-			padding: 8px;
-			border-bottom: 1px solid #ddd;
-		}
-		th {
-			background-color: #f2f2f2;
-		}
 	</style>
 </head>
+
 <body>
-    <?
-    require "../navbar/navbar.php";
-        loadNavBar();
-        
-    ?>
-	<h1>Events:</h1>
+<header class="header" id="header">
+    <nav class="navbar container">
+       <a href="../index.php" class="brand"><img src="../logo-no-background.png"style="width:46px"></a>
+       <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+       </div>
+       <span class="overlay"></span>
+       <div class="menu" id="menu">
+          <ul class="menu-inner">
+             <li class="menu-item"><a class="menu-link" href="../index.php">Home</a></li>
+             <li class="menu-item"><a class="menu-link" href="./Tourism.php">Tourism</a></li>
+             <li class="menu-item"><a class="menu-link" href="./Restaurants.php">Restaurants</a></li>
+             <li class="menu-item"><a class="menu-link" href="./Lebanon.php">Map of Lebanon</a></li>
+             <li class="menu-item"><a class="menu-link" href="./Transportation.php">Transportation</a></li>
+             <li class="menu-item"><a class="menu-link" href="../users/register_form.php">Sign Up/Log In</a></li>
+         </ul>
+       </div>
+       <span><i class="bx bx-search search-toggle"></i></span>
+       <div class="search-block">
+          <form class="search-form">
+             <span><i class="bx bx-arrow-back search-cancel"></i></span>
+             <input type="search" name="search" class="search-input" placeholder="Search here...">
+          </form>
+          <div id="search-results"></div>
+       </div>
+       
+    </nav>
+ </header>
+	<script src="../JS/SearchBar.min.js"></script>
+	
+	<br>
 	<table>
 		<thead>
 			<tr>
-				<th>Title</th>
-				<th>Date</th>
-				<th>Location</th>
-				<th>Image</th>
-				<th>Day</th>
 				<th>Month</th>
-				<th>Time</th>
-				<th>Title</th>
-				<th>-</th>
+				<th>Dates</th>
 				<th>Name</th>
 				<th>Description</th>
 			</tr>
@@ -61,20 +65,13 @@
 			$html = str_get_html($html); // Updated to use str_get_html function
             $events_array = array(); // Initialize the array outside of the foreach loop
 
-foreach ($html->find('div#ctl00_MainContent_HpEvents_rptEvents_ctl00_ItemFeatured') as $event) { // Changed the variable name to $event to be more descriptive
+foreach ($html->find('div.containerMix') as $event) { // Changed the variable name to $event to be more descriptive
 $event_data = array();
-$event_data['title'] = $event->find('.event-title', 0) ? $event->find('.event-title', 0)->plaintext : '';
-$event_data['date'] = $event->find('.event-date', 0) ? $event->find('.event-date', 0)->plaintext : '';
-$event_data['location'] = $event->find('.event-location', 0) ? $event->find('.event-location', 0)->plaintext : '';
-$event_data['image'] = $event->find('.event-image img', 0) ? $event->find('.event-image img', 0)->src : '';
 $event_data['Fday'] = $event->find('.Fday', 0) ? $event->find('.Fday', 0)->plaintext : '';
 $event_data['FMonth'] = $event->find('.FMonth', 0) ? $event->find('.FMonth', 0)->plaintext : '';
-$event_data['FMonth2'] = $event->find('.FMonth2', 0) ? $event->find('.FMonth2', 0)->plaintext : '';
+$event_data['FMonth2'] = $event->find('.FMonth2.mb5M', 0) ? $event->find('.FMonth2.mb5M', 0)->plaintext : '';
 $event_data['eventFTitle'] = $event->find('.eventFTitle', 0) ? $event->find('.eventFTitle', 0)->plaintext : '';
-$event_data['eventFTiitle2Lines'] = $event->find('.eventFTiitle2Lines', 0) ? $event->find('.eventFTiitle2Lines', 0)->plaintext : '';
-$event_data['Ellipsis-lg-2'] = $event->find('.Ellipsis-lg-2', 0) ? $event->find('.Ellipsis-lg-2', 0)->plaintext : '';
 $event_data['eventDdesc'] = $event->find('.eventDdesc', 0) ? $event->find('.eventDdesc', 0)->plaintext : '';
-
 $events_array[] = $event_data;
 }
 
@@ -83,16 +80,10 @@ unset($html); // Unset the HTML object variable
 ?>
 <?php foreach ($events_array as $event) : ?>
 			<tr>
-				<td><?php echo $event['title']; ?></td>
-				<td><?php echo $event['date']; ?></td>
-				<td><?php echo $event['location']; ?></td>
-				<td><img src="<?php echo $event['image']; ?>" alt="<?php echo $event['title']; ?>" style="max-height: 100px;"></td>
-				<td><?php echo $event['Fday']; ?></td>
+				
 				<td><?php echo $event['FMonth']; ?></td>
-				<td><?php echo $event['FMonth2']; ?></td>
+				<td><?php echo $event['Fday']; ?> <?php echo $event['FMonth2']; ?></td>
 				<td><?php echo $event['eventFTitle']; ?></td>
-				<td><?php echo $event['eventFTiitle2Lines']; ?></td>
-				<td><?php echo $event['Ellipsis-lg-2']; ?></td>
 				<td><?php echo $event['eventDdesc']; ?></td>
 			</tr>
 		<?php endforeach; ?>
